@@ -1,0 +1,49 @@
+//
+//  LoginViewController.swift
+//  LoginSignupPage
+//
+//  Created by Arush Sharma on 11/05/23.
+//
+
+import UIKit
+import MoEngageSDK
+
+class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var FirstName: UITextField!
+    @IBOutlet weak var LastName: UITextField!
+    @IBOutlet weak var Password: UITextField!
+    @IBOutlet weak var Location: UITextField!
+    @IBOutlet weak var UID: UITextField!
+    
+    @IBOutlet weak var Phone: UITextField!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    @IBAction func LoginButton(_ sender: Any) {
+        MoEngageSDKAnalytics.sharedInstance.setLastName(LastName.text ?? "")
+        MoEngageSDKAnalytics.sharedInstance.setFirstName(FirstName.text ?? "")
+        MoEngageSDKAnalytics.sharedInstance.setUniqueID(UID.text ?? "")
+        MoEngageSDKAnalytics.sharedInstance.setEmailID(UID.text ?? "")
+        MoEngageSDKAnalytics.sharedInstance.setMobileNumber(Phone.text ?? "")
+
+        
+
+        
+    }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

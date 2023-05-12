@@ -1,0 +1,16 @@
+PODS:
+  - MoEngage-iOS-SDK (9.8.0)
+
+DEPENDENCIES:
+  - MoEngage-iOS-SDK (~> 9.8.0)
+
+SPEC REPOS:
+  trunk:
+    - MoEngage-iOS-SDK
+
+SPEC CHECKSUMS:
+  MoEngage-iOS-SDK: df69cdd849b18548b4a1cadebfb7ab7a9b6d92b3
+
+PODFILE CHECKSUM: d41a299b797c2c256457e3944da2fdf9efab1fda
+
+COCOAPODS: 1.12.1
