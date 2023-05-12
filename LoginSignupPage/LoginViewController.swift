@@ -30,6 +30,7 @@ class LoginViewController: UIViewController {
         MoEngageSDKAnalytics.sharedInstance.setUniqueID(UID.text ?? "")
         MoEngageSDKAnalytics.sharedInstance.setEmailID(UID.text ?? "")
         MoEngageSDKAnalytics.sharedInstance.setMobileNumber(Phone.text ?? "")
+        MoEngageSDKAnalytics.sharedInstance.trackEvent("SignUp", withProperties: nil)
 
         
 
