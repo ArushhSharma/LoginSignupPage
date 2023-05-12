@@ -94,7 +94,7 @@
                                         </constraints>
                                         <color key="tintColor" red="0.0" green="0.47843137254901963" blue="1" alpha="0.90106823979591832" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="capsule"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Signup" cornerStyle="capsule"/>
                                         <connections>
                                             <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="izZ-KQ-HeZ"/>
                                             <segue destination="Nnm-H8-ATV" kind="show" id="8DN-1L-dV4"/>
@@ -107,7 +107,7 @@
                                             <constraint firstAttribute="height" constant="44.329999999999998" id="98N-HC-aK0"/>
                                         </constraints>
                                         <color key="tintColor" red="0.0" green="0.47843137254901963" blue="1" alpha="0.48777636054421769" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Don't have an account ? SignUp"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Have an account ? Login"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
