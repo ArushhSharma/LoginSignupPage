@@ -7,6 +7,9 @@
 
 import UIKit
 import MoEngageSDK
+import MoEngageInApps
+import MoEngageCards
+import MoEngageInbox
 
 class LoginViewController: UIViewController {
     
@@ -24,6 +27,19 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func Cards(_ sender: Any) {
+        
+    
+        MoEngageSDKCards.sharedInstance.presentCardsViewController()
+
+        
+    }
+    @IBAction func NotificationCentre(_ sender: Any) {
+        
+        MoEngageSDKInbox.sharedInstance.presentInboxViewController(withUIConfiguration: nil)
+
+    
+    }
     @IBAction func LoginButton(_ sender: Any) {
         MoEngageSDKAnalytics.sharedInstance.setLastName(LastName.text ?? "")
         MoEngageSDKAnalytics.sharedInstance.setFirstName(FirstName.text ?? "")
@@ -31,6 +47,7 @@ class LoginViewController: UIViewController {
         MoEngageSDKAnalytics.sharedInstance.setEmailID(UID.text ?? "")
         MoEngageSDKAnalytics.sharedInstance.setMobileNumber(Phone.text ?? "")
         MoEngageSDKAnalytics.sharedInstance.trackEvent("SignUp", withProperties: nil)
+        MoEngageSDKInApp.sharedInstance.showInApp()
 
         
 

@@ -1,16 +1,44 @@
 PODS:
   - MoEngage-iOS-SDK (9.8.0)
+  - MoEngageCards (4.8.0):
+    - MoEngage-iOS-SDK (< 9.9.0, >= 9.8.0)
+  - MoEngageInApp (4.8.1):
+    - MoEngage-iOS-SDK (< 9.9.0, >= 9.8.0)
+  - MoEngageInbox (2.8.1):
+    - MoEngage-iOS-SDK (< 9.9.0, >= 9.8.0)
+    - MoEngageRichNotification (< 7.9.0, >= 7.8.0)
+  - MoEngageRealTimeTrigger (2.8.0):
+    - MoEngage-iOS-SDK (< 9.9.0, >= 9.8.0)
+    - MoEngageRichNotification (< 7.9.0, >= 7.8.0)
+  - MoEngageRichNotification (7.8.0):
+    - MoEngage-iOS-SDK (< 9.9.0, >= 9.8.0)
 
 DEPENDENCIES:
   - MoEngage-iOS-SDK (~> 9.8.0)
+  - MoEngageCards
+  - MoEngageCards (~> 4.8.0)
+  - MoEngageInApp (~> 4.8.1)
+  - MoEngageInbox (~> 2.8.1)
+  - MoEngageRealTimeTrigger (~> 2.8.0)
+  - MoEngageRichNotification (~> 7.8.0)
 
 SPEC REPOS:
   trunk:
     - MoEngage-iOS-SDK
+    - MoEngageCards
+    - MoEngageInApp
+    - MoEngageInbox
+    - MoEngageRealTimeTrigger
+    - MoEngageRichNotification
 
 SPEC CHECKSUMS:
   MoEngage-iOS-SDK: df69cdd849b18548b4a1cadebfb7ab7a9b6d92b3
+  MoEngageCards: fea1ca091bacddba09b08cfb7ce6985ea3ceb665
+  MoEngageInApp: f0ae755165d85099f4ca9091b7ac433c28fe44db
+  MoEngageInbox: d7e111ed480281abe539a9f3ec5084e9f7f80656
+  MoEngageRealTimeTrigger: 0daffdbd7ccd10374fbba4a887f496750dfc282a
+  MoEngageRichNotification: ef9f1ec806dcc8932a481faa68f89037df6dfc1b
 
-PODFILE CHECKSUM: d41a299b797c2c256457e3944da2fdf9efab1fda
+PODFILE CHECKSUM: f4fec451f9ee87a7567c4f37c4a17d7deb899ee8
 
 COCOAPODS: 1.12.1

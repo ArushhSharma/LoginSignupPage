@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -21,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="MYE-gh-8dm">
-                                <rect key="frame" x="30" y="162.33333333333331" width="333" height="629.66666666666674"/>
+                                <rect key="frame" x="30" y="87" width="333" height="705"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tau-xw-pKt" userLabel="FirstName">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
@@ -47,7 +48,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" adjustsFontSizeToFit="NO" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Hoe-px-yZJ">
-                                        <rect key="frame" x="0.0" y="169.99999999999997" width="333" height="50"/>
+                                        <rect key="frame" x="0.0" y="170" width="333" height="50"/>
                                         <color key="backgroundColor" red="0.94146166396909903" green="0.99106694947507834" blue="1" alpha="0.88376913265306123" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -100,14 +101,31 @@
                                             <segue destination="Nnm-H8-ATV" kind="show" id="8DN-1L-dV4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-MR-MfK" userLabel="SignUp">
-                                        <rect key="frame" x="0.0" y="585.33333333333326" width="333" height="44.333333333333371"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePI-tw-owN">
+                                        <rect key="frame" x="0.0" y="585.33333333333337" width="333" height="40.333333333333371"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40.329999999999998" id="hx9-Ju-WSH"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.90106823979999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="NotificationCentre" cornerStyle="capsule"/>
+                                        <connections>
+                                            <action selector="NotificationCentre:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adj-js-WQP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-MR-MfK" userLabel="Cards">
+                                        <rect key="frame" x="0.0" y="660.66666666666663" width="333" height="44.333333333333371"/>
                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44.329999999999998" id="98N-HC-aK0"/>
                                         </constraints>
                                         <color key="tintColor" red="0.0" green="0.47843137254901963" blue="1" alpha="0.48777636054421769" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Have an account ? Login"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Cards"/>
+                                        <connections>
+                                            <action selector="Cards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MLB-mb-0bx"/>
+                                            <action selector="Cards:" destination="Ak6-ie-Uea" eventType="touchUpInside" id="x99-8C-XDe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
@@ -138,6 +156,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Ak6-ie-Uea" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-532.06106870229007" y="131.69014084507043"/>
         </scene>

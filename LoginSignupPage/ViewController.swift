@@ -9,13 +9,13 @@ import UIKit
 import MoEngageSDK
 
 class ViewController: UIViewController {
-
     @IBAction func Logout(_ sender: Any) {
         MoEngageSDKAnalytics.sharedInstance.resetUser()
 
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+//        MoEngageSDKInApp.sharedInstance.setInAppDelegate(self)
         // Do any additional setup after loading the view.
     }
 
